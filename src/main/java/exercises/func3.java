@@ -1,6 +1,16 @@
 package exercises;
 
 public class func3 {
+
+    public static void main(String[] args) {
+        for (int counter = 1; counter <= 10000; counter++) {
+            boolean res = mispar_mesu(counter);
+            if (res) {
+                System.out.println(counter);
+            }
+        }
+    }
+
     public static boolean mispar_mesu(int num) {
         boolean isOk = true;
         int sum = 0;
@@ -13,14 +23,5 @@ public class func3 {
             isOk = false;
         }
         return isOk;
-    }
-
-    public static void main(String[] args) {
-        for (int counter = 1; counter <= 10000; counter++) {
-            boolean res = mispar_mesu(counter);
-            if (res) {
-                System.out.println(counter);
-            }
-        }
     }
 }

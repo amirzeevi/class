@@ -2,7 +2,22 @@ package exercises;
 
 import java.util.Scanner;
 
+/**
+ * receives two positive numbers. if they are different in length the function will return -1.
+ * else the function will return a number that has the lowest digit of each numbers.
+ */
+
 public class func2 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter two numbers");
+        int num1 = input.nextInt();
+        int num2 = input.nextInt();
+        int res = lowest_numbers(num1, num2);
+        System.out.println(res);
+    }
+
     public static int lowest_numbers(int num1, int num2) {
         int temp1 = num1;
         int temp2 = num2;
@@ -34,17 +49,6 @@ public class func2 {
                 num2 /= 10;
             }
         }
-        int res = isOk ? new_num : -1;
-        return res;
-    }
-
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Please enter two numbers");
-        int num1 = input.nextInt();
-        int num2 = input.nextInt();
-
-        int res = lowest_numbers(num1, num2);
-        System.out.println(res);
+        return isOk ? new_num : -1;
     }
 }
