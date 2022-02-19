@@ -1,4 +1,4 @@
-package boom;
+package oop.boom;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -15,13 +15,13 @@ public class Boom7 {
             while (temp > 0) {
                 if (temp % 10 == 7) {
                     isFound = true;
-                    pw.println("boom");
+                    pw.println("oop/boom");
                     break;
                 }
                 temp /= 10;
             }
             if (!isFound && i % 7 == 0) {
-                pw.println("boom");
+                pw.println("oop/boom");
             } else {
                 if (!isFound) {
                     pw.println(i);

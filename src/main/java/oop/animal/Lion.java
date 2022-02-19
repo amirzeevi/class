@@ -1,4 +1,4 @@
-package animal;
+package oop.animal;
 
 public class Lion extends ANIMAL{
 
