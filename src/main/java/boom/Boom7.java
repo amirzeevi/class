@@ -1,9 +1,8 @@
-package Boom;
+package boom;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import java.util.Scanner;
 
 public class Boom7 {
 
@@ -16,13 +15,13 @@ public class Boom7 {
             while (temp > 0) {
                 if (temp % 10 == 7) {
                     isFound = true;
-                    pw.println("Boom");
+                    pw.println("boom");
                     break;
                 }
                 temp /= 10;
             }
             if (!isFound && i % 7 == 0) {
-                pw.println("Boom");
+                pw.println("boom");
             } else {
                 if (!isFound) {
                     pw.println(i);

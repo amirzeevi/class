@@ -1,4 +1,4 @@
-package exercies;
+package exercises;
 
 public class func8 {
     public static int[] add(int[] arr1, int[] arr2) {

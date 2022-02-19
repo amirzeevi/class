@@ -1,4 +1,4 @@
-package exercies;
+package exercises;
 
 public class func7 {
     public static boolean mirror(int[][] arr) {

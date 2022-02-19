@@ -1,4 +1,4 @@
-package exercies;
+package exercises;
 
 public class func5 {
     public static void meuian(int num, char ch) {

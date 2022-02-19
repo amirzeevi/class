@@ -1,5 +1,6 @@
-package exercies;
+package exercises;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class jojo {
@@ -38,24 +39,24 @@ public class jojo {
     public static void distinct(int[] arr1, int[] arr2, int[] arr3) {
         boolean isThere;
         boolean isExist = false;
-        for (int i = 0; i < arr1.length; i++) {
+        for (int value : arr1) {
             isThere = false;
-            for (int j = 0; j < arr2.length; j++) {
-                if (arr1[i] == arr2[j]) {
+            for (int i : arr2) {
+                if (value == i) {
                     isThere = true;
                     break;
                 }
             }
             if (!isThere) {
-                for (int k = 0; k < arr3.length; k++) {
+                for (int i : arr3) {
                     isExist = false;
-                    if (arr1[i] == arr3[k]) {
+                    if (value == i) {
                         isExist = true;
                         break;
                     }
                 }
                 if (!isExist) {
-                    arr3[pointer] = arr1[i];
+                    arr3[pointer] = value;
                     pointer++;
                 }
             }
@@ -71,9 +72,7 @@ public class jojo {
         int[] arr2 = initializeArr(ARR_SIZE);
 
         int[] arr3 = new int[ARR_SIZE];
-        for (int index = 0; index < arr3.length; index++) {
-            arr3[index] = -1;
-        }
+        Arrays.fill(arr3, -1);
         distinct(arr1, arr2, arr3);
         distinct(arr2, arr1, arr3);
         printArr(arr1);

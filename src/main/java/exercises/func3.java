@@ -1,4 +1,4 @@
-package exercies;
+package exercises;
 
 public class func3 {
     public static boolean mispar_mesu(int num) {

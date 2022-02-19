@@ -1,6 +1,5 @@
-package exercies;
+package exercises;
 
-import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.util.Scanner;
 
 public class func1 {

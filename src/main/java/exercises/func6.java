@@ -1,4 +1,4 @@
-package exercies;
+package exercises;
 
 public class func6 {
     public static boolean sum_of_sum(int[][] arr) {

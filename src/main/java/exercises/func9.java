@@ -1,7 +1,5 @@
-package exercies;
+package exercises;
 
-import javax.swing.plaf.synth.SynthOptionPaneUI;
-import java.util.Arrays;
 
 public class func9 {
     public static String[] makeBoard(int num) {
@@ -56,7 +54,7 @@ public class func9 {
         }
     }
 
-    public static void mrbel_game(int num) {
+    public static void marbel_game(int num) {
         String[] board = makeBoard(num);
         for (String j : board) {
             System.out.print(j);
@@ -78,6 +76,6 @@ public class func9 {
     }
         public static void main (String[]args){
             int size = 15;
-            mrbel_game(size);
+            marbel_game(size);
         }
     }

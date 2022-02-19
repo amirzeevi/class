@@ -1,4 +1,4 @@
-package exercies;
+package exercises;
 
 public class func4 {
     public static int sum_digit(int num) {
