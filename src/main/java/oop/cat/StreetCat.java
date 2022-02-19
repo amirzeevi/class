@@ -1,4 +1,4 @@
-package cat;
+package oop.cat;
 
 public class StreetCat extends Cat {
     private int numberOfFights;

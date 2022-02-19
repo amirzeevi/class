@@ -1,4 +1,4 @@
-package cat;
+package oop.cat;
 
 public class SiamiCat extends Cat {
     private final String favoriteFood;

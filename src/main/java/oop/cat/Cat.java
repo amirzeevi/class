@@ -1,4 +1,4 @@
-package cat;
+package oop.cat;
 
 public class Cat {
     private String name;
