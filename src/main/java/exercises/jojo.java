@@ -3,7 +3,7 @@ package exercises;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class jojo {
+public class func10 {
     static int pointer = 0;
 
     public static int[] initializeArr(int ARR_SIZE) {
